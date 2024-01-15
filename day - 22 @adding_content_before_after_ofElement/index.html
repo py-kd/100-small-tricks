@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #my-info{
+            background: linear-gradient(#acd, #021);
+            height: 200px;
+            width: 300px;
+            color: blueviolet;
+        }
+        #my-info::after{
+            content: "from css";
+            color: brown;
+        }
+        #my-info::before{
+            content: "from css";
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="my-info">
+        i am from div
+    </div>
+<!-- NOTE: after and beore add content at the after or before the content of the element -->
+</body>
+</html>
