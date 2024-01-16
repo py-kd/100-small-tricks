@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mybox{
+            height: 500px;
+            width: 360px;
+            background-image: url(bg.jpg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+        }
+        #inner{
+            height: 75%;
+            width: 100%;
+            background: linear-gradient(transparent, #fff);
+            position: absolute;
+            bottom: -40%;
+            transition: all ease 0.5s;   
+        }
+        #mybox:hover #inner{
+            bottom: 0;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div id="mybox">
+        <div id="inner">
+
+        </div>
+    </div>
+
+</body>
+</html>
