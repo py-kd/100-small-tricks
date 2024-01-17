@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html , body{
+            height: 100%;
+            width: 100%;
+        }
+        .parent{
+            height: 200px;
+            width: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .child{
+            height: 200px;
+            width: 300px;
+            background-color: chocolate;
+            transition: all ease 0.5s;
+        }
+
+        /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+        *{
+            margin: 0;
+            padding: 0;
+            -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+        }
+        html , body{
+            height: 100%;
+            width: 100%;
+        }
+        .parent{
+            height: 200px;
+            width: 300px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: space-evenly;
+                -ms-flex-pack: space-evenly;
+                    justify-content: space-evenly;
+        }
+        .child{
+            height: 200px;
+            width: 300px;
+            background-color: chocolate;
+            -webkit-transition: all ease 0.5s;
+            -o-transition: all ease 0.5s;
+            transition: all ease 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+
+        </div>
+    </div>
+</body>
+</html>
