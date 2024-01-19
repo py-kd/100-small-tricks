@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;            
+            justify-content: center;
+        }
+        strong,span{
+            font-size: 52px;
+        }
+        strong{color: red;}
+    </style>
+
+    <script>
+        // professional way to disable context menu
+        document.addEventListener("contextmenu", function(e){
+            e.preventDefault()
+        }, false)
+    </script>
+</head>
+<!-- <body contextmenu="return false"> -->
+<body>
+
+    <strong>Note:</strong><span>right click my context menu is disabled</span>
+    
+</body>
+</html>
