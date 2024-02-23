@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+        #box{
+            height: 25rem;
+            width: 25rem;
+            background: conic-gradient(red,purple,blue,green,violet,yellow,orange,red);
+            border-radius: 50%;
+            animation: rainbowAnimation 3s linear infinite;
+            border: 5px solid #aacff0;
+        }
+        @keyframes rainbowAnimation{
+            100%{
+                rotate: 360deg;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="box"> </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body,html{
+            height: 100%;
+            width: 100%;
+        }
+        body{            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            counter-reset: myCounter;
+        }
+        h1::before{
+            content: counter(myCounter)". ";
+            counter-increment: myCounter;
+            color: blue;
+            padding: 0 1.5rem ;
+        }
+        h1{
+            color: brown;
+            margin: 1.7rem;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Ram</h1>
+        <h1>Krishna</h1>
+        <h1>Shiv</h1>
+        <h1>Ganesh</h1>
+        <h1>Hanuman</h1>
+    </div>        
+</body>
+</html>
